@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zamikanie</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<p>Число1: <input type="text" id="n1" oninput="onmyinput()"/></p>
+	<p>Операция: <input type="text" id="op" oninput="onmyinput()"></p>
+	<p>Число2: <input type="text" id="n2" oninput="onmyinput()"></p>
+	<p>Равно: <input type="text" id="eq"></p>
+	<button onclick="action('+')"  id="colorred1">Сложить</button>
+	<button onclick="action('-')"  id="colorred2">Вычесть</button><br><br>
+	<button onclick="action('*')">Умножить</button>
+	<button onclick="action('/')">Разделить</button><br><br>
+	<button onclick="calculate()">Равно</button>	
+	<ht>
+	<p id="out">Результат:</p>
+
+<div class="hovered">
+	<button class="hovered" onclick="digit(1)" id="one" value="1">1</button>
+	<button class="hovered" onclick="digit(2)" id="two" value="2">2</button>
+	<button class="hovered" onclick="digit(3)" id="three" value="3">3</button>
+</div>
+<div class="hovered">
+	<button class="hovered" onclick="digit(4)" id="four" value="4" oninput="onmyinput()">4</button>
+	<button class="hovered" onclick="digit(5)" id="five" value="5" oninput="onmyinput()">5</button>
+	<button class="hovered" onclick="digit(6)" id="six" value="6" oninput="onmyinput()">6</button>
+</div>
+	<button onclick="digit(7)" id="seven" value="7" oninput="onmyinput()">7</button>
+	<button onclick="digit(8)" id="eight" value="8" oninput="onmyinput()">8</button>
+	<button onclick="digit(9)" id="nine" value="9" oninput="onmyinput()">9</button><br>
+	<button onclick="digit(0)" id="zero" value="0" oninput="onmyinput()">0</button>
+	<script type="text/javascript" src="1.js"></script>
+
+</body>
+</html>
